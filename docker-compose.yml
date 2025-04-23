@@ -12,7 +12,7 @@ services:
     networks:
       - app-network
     volumes:
-      - ./frontend/build:/app/frontend/build  # Mount built frontend into backend
+      - ./frontend/build:../frontend/build  # Mount built frontend into backend
 
   postgres:
     image: postgres:14
